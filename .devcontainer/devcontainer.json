@@ -1,0 +1,14 @@
+{
+  "name": "Symbol Comparison Service",
+  "dockerFile": "../Dockerfile",
+  "forwardPorts": [3001],
+  "customizations": {
+    "vscode": {
+      "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
