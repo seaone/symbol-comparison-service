@@ -48,25 +48,9 @@ npm start
 
 The server will start on port `3001`. You can send POST requests to `http://localhost:3001/compare` with two image files to compare them.
 
-### Using Docker
+### Developing inside a Container
 
-The project includes a `devcontainer` configuration, allowing you to develop and run the service in a Docker container. To build and run the service using Docker, follow these steps:
-
-1. Build the Docker image:
-
-   ```bash
-   docker build -t symbol-similarity-service .
-   ```
-
-   **Note**: During the Docker build process, TensorFlow.js Node.js bindings are rebuilt from source to ensure compatibility with the container environment. This is done using the command `npm rebuild @tensorflow/tfjs-node --build-from-source`.
-
-2. Run the Docker container:
-
-   ```bash
-   docker run -d -p 3001:3001 --name symbol-similarity-service-container symbol-similarity-service
-   ```
-
-The service will be available at `http://localhost:3001`.
+The project includes a [`devcontainer`](https://code.visualstudio.com/docs/devcontainers/containers) configuration, allowing you to develop and run the service in a Docker container.
 
 ## Siamese Neural Network
 
