@@ -43,7 +43,7 @@ npm install
 To start the development server, run:
 
 ```bash
-npm start
+npm run dev
 ```
 
 The server will start on port `3001`. You can send POST requests to `http://localhost:3001/compare` with two image files to compare them.
